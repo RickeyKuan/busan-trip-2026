@@ -119,6 +119,14 @@
    tabs.forEach((b,i)=>b.classList.toggle('active',i===index));
    panels.forEach((p,i)=>p.classList.toggle('active',i===index));
    if(!reduced&&window.gsap){gsap.fromTo(panels[index].querySelectorAll('.event'),{y:18,opacity:0},{y:0,opacity:1,duration:.48,stagger:.055,ease:'power2.out'});}
+   // Bottom date selector: jump back to the top of the newly selected day's itinerary.
+   if(btn.closest('.daynav-bottom')){
+     requestAnimationFrame(()=>{
+       const target=panels[index];
+       const top=target.getBoundingClientRect().top+window.scrollY-88;
+       window.scrollTo({top:Math.max(0,top),behavior:reduced?'auto':'smooth'});
+     });
+   }
  }));
  document.querySelectorAll('[data-list]').forEach(list=>{
    const key='busan-2026-'+list.dataset.list,inputs=[...list.querySelectorAll('input')],count=list.parentElement.querySelector('.count'),bar=list.parentElement.querySelector('.progress span');
