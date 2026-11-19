@@ -35,7 +35,7 @@
 
 .spotlight-wrap{padding-top:100px;padding-bottom:110px}
 .spotlight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.spot-card{background:#1a292a;border:1px solid rgba(242,238,230,.16);min-width:0;overflow:hidden}
+.spot-card{background:#1a292a;border:1px solid rgba(242,238,230,.16);min-width:0;overflow:hidden;cursor:pointer;transition:transform .3s,border-color .3s}.spot-card:hover{transform:translateY(-5px);border-color:var(--orange)}.spot-card:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 .spot-image{height:260px;position:relative;background-size:cover;background-position:center}
 .spot-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,19,.05),rgba(8,18,19,.55))}
 .spot-image span{position:absolute;z-index:1;left:22px;bottom:18px;color:#fff;font:11px var(--mono);letter-spacing:.14em}
@@ -54,7 +54,16 @@
 <header class="hero" id="top"><div class="hero-bg"></div><div class="hero-orb"></div><div class="hero-copy"><div class="kicker">A WINTER CITY JOURNAL — DECEMBER 17—20, 2026</div><h1 class="hero-title">BUSAN<span>SLOWLY.</span></h1><div class="hero-bottom"><div class="hero-sub">海風、城市、咖啡與一點點漫遊。<br>四天三夜，把釜山走成自己的節奏。</div><div class="hero-meta">4 DAYS / 3 NIGHTS<br>17—20 DEC 2026<br>STAY · GRAY 193 HOTEL<br>GWANGALLI, BUSAN</div></div></div><div class="scroll-cue">SCROLL TO EXPLORE</div></header>
 <div class="marquee"><div class="marquee-track"><span>TAKE THE LONG WAY HOME ✳ BUSAN IN WINTER ✳ GOOD DAYS BY THE SEA ✳ TAKE THE LONG WAY HOME ✳ BUSAN IN WINTER ✳ GOOD DAYS BY THE SEA ✳</span></div></div>
 <section class="intro"><div><div class="eyebrow">01 / THE JOURNEY</div><h2>不趕路，<br>才看得到風景。</h2></div><div class="intro-copy"><p>以廣安里為基地，白天探索西面、田浦與 Centum City，晚上回到海邊。行程保留彈性，讓購物、吃飯和臨時發現的小店都有空間。</p><p>這不是打卡競賽。把重要的先放進路線，其他交給當天的天氣與心情。</p><div class="facts"><div class="fact"><small>ARRIVE</small><strong>12.17 / 13:00</strong></div><div class="fact"><small>FLIGHT HOME</small><strong>12.20 / 18:55</strong></div><div class="fact"><small>HOME BASE</small><strong>Gwangalli</strong></div></div></div></section>
-<section class="section section-dark" id="itinerary"><div class="section-head"><div><div class="eyebrow">02 / FOUR DAYS IN BUSAN</div><h2>THE ITINERARY</h2></div><p>點選日期切換行程。每個地點都附上地圖入口；未定案項目會清楚標示，出發前再確認。</p></div>
+<section id="special" class="spotlight-section">
+<div class="section section-dark spotlight-wrap">
+<div class="section-head"><div><div class="eyebrow">02 / THE DAILY EDIT</div><h2>DAILY<br>SPOTLIGHT.</h2></div><p>每天一個值得期待的重點。從海邊慢慢展開，到城市探索、購物，再用南浦洞收尾。</p></div>
+<div class="spotlight-grid">
+<article class="spot-card" data-spot-day="0" role="button" tabindex="0" aria-label="查看 12 月 17 日行程"><div class="spot-image spot-day1"><span>DAY 01 / 12.17</span></div><div class="spot-copy"><div class="eyebrow">THURSDAY · ARRIVAL</div><h3>Gwangalli, after landing.</h3><p>抵達、入住 Gray 193 Hotel，沿廣安里海邊散步，晚上吃彥陽烤肉 부산집 본가，再看廣安大橋夜景。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gwangalli+Beach">EXPLORE GWANGALLI ↗</a></div></article>
+<article class="spot-card" data-spot-day="1" role="button" tabindex="0" aria-label="查看 12 月 18 日行程"><div class="spot-image spot-day2"><span>DAY 02 / 12.18</span></div><div class="spot-copy"><div class="eyebrow">FRIDAY · CITY EXPLORING</div><h3>Seomyeon to Jeonpo.</h3><p>從 우리체육사 開始，接西面地下街、百貨與田浦咖啡街，穿插特色店與 DIART；晚餐安排醬油螃蟹。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jeonpo+Cafe+Street+Busan">EXPLORE JEONPO ↗</a></div></article>
+<article class="spot-card" data-spot-day="2" role="button" tabindex="0" aria-label="查看 12 月 19 日行程"><div class="spot-image spot-day3"><span>DAY 03 / 12.19</span></div><div class="spot-copy"><div class="eyebrow">SATURDAY · RESET & RETAIL</div><h3>Shop the city.</h3><p>上午西面醫美，休息後到新世界百貨 Centum City 探索 2–3 小時，附近晚餐，晚上到 Millac The Market 的 Olive Young 採購。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shinsegae+Centum+City+Busan">EXPLORE CENTUM ↗</a></div></article>
+<article class="spot-card" data-spot-day="3" role="button" tabindex="0" aria-label="查看 12 月 20 日行程"><div class="spot-image spot-day4"><span>DAY 04 / 12.20</span></div><div class="spot-copy"><div class="eyebrow">SUNDAY · LAST STOPS</div><h3>Nampo, one last bite.</h3><p>退房寄放行李後逛南浦洞與 BIFF 廣場，到札嘎其市場吃海鮮午餐，再回飯店取行李前往機場。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BIFF+Square+Jagalchi+Market+Busan">EXPLORE NAMPO ↗</a></div></article>
+</div></div></section>
+<section class="section section-dark" id="itinerary"><div class="section-head"><div><div class="eyebrow">03 / FOUR DAYS IN BUSAN</div><h2>THE ITINERARY</h2></div><p>點選日期切換行程。每個地點都附上地圖入口；未定案項目會清楚標示，出發前再確認。</p></div>
 <div class="daynav"><button class="daybtn active" data-day="0">DAY 01 / 12.17</button><button class="daybtn" data-day="1">DAY 02 / 12.18</button><button class="daybtn" data-day="2">DAY 03 / 12.19</button><button class="daybtn" data-day="3">DAY 04 / 12.20</button></div>
 <div class="day-panel active" id="day0"><div class="day-layout"><aside class="day-aside"><div class="day-number">01</div><div class="daydate">THURSDAY · ARRIVAL</div><h3>海邊，先慢下來。</h3><p>抵達、入住、散步，再用一頓韓牛烤肉開啟旅程。今天不塞景點。</p></aside><div class="events">
 <div class="event"><div class="event-time">13:00</div><div><h4>抵達金海國際機場</h4><p>入境、領行李，前往廣安里。抓交通與入住緩衝。</p><div class="event-links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gimhae+International+Airport">OPEN MAP ↗</a></div></div></div>
@@ -90,15 +99,6 @@
 </div></div></div>
 <div class="daynav daynav-bottom" aria-label="選擇其他日期"><span class="daynav-hint">想看其他天？</span><button class="daybtn active" data-day="0">DAY 01 / 12.17</button><button class="daybtn" data-day="1">DAY 02 / 12.18</button><button class="daybtn" data-day="2">DAY 03 / 12.19</button><button class="daybtn" data-day="3">DAY 04 / 12.20</button></div>
 </section>
-<section id="special" class="spotlight-section">
-<div class="section section-dark spotlight-wrap">
-<div class="section-head"><div><div class="eyebrow">03 / THE DAILY EDIT</div><h2>DAILY<br>SPOTLIGHT.</h2></div><p>每天一個值得期待的重點。從海邊慢慢展開，到城市探索、購物，再用南浦洞收尾。</p></div>
-<div class="spotlight-grid">
-<article class="spot-card"><div class="spot-image spot-day1"><span>DAY 01 / 12.17</span></div><div class="spot-copy"><div class="eyebrow">THURSDAY · ARRIVAL</div><h3>Gwangalli, after landing.</h3><p>抵達、入住 Gray 193 Hotel，沿廣安里海邊散步，晚上吃彥陽烤肉 부산집 본가，再看廣安大橋夜景。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gwangalli+Beach">EXPLORE GWANGALLI ↗</a></div></article>
-<article class="spot-card"><div class="spot-image spot-day2"><span>DAY 02 / 12.18</span></div><div class="spot-copy"><div class="eyebrow">FRIDAY · CITY EXPLORING</div><h3>Seomyeon to Jeonpo.</h3><p>從 우리체육사 開始，接西面地下街、百貨與田浦咖啡街，穿插特色店與 DIART；晚餐安排醬油螃蟹。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jeonpo+Cafe+Street+Busan">EXPLORE JEONPO ↗</a></div></article>
-<article class="spot-card"><div class="spot-image spot-day3"><span>DAY 03 / 12.19</span></div><div class="spot-copy"><div class="eyebrow">SATURDAY · RESET & RETAIL</div><h3>Shop the city.</h3><p>上午西面醫美，休息後到新世界百貨 Centum City 探索 2–3 小時，附近晚餐，晚上到 Millac The Market 的 Olive Young 採購。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shinsegae+Centum+City+Busan">EXPLORE CENTUM ↗</a></div></article>
-<article class="spot-card"><div class="spot-image spot-day4"><span>DAY 04 / 12.20</span></div><div class="spot-copy"><div class="eyebrow">SUNDAY · LAST STOPS</div><h3>Nampo, one last bite.</h3><p>退房寄放行李後逛南浦洞與 BIFF 廣場，到札嘎其市場吃海鮮午餐，再回飯店取行李前往機場。</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BIFF+Square+Jagalchi+Market+Busan">EXPLORE NAMPO ↗</a></div></article>
-</div></div></section>
 <section class="section section-dark" id="tools"><div class="section-head"><div><div class="eyebrow">04 / THE USEFUL PART</div><h2>YOUR TRIP KIT</h2></div><p>可直接在頁面勾選，完成進度會保存在這台裝置的瀏覽器。</p></div>
 <div class="toolbox"><div class="tool-card"><div class="small">01 / BEFORE YOU GO</div><h3>出發前檢查</h3><p>行前重要物品與資料。</p><div class="checklist" data-list="packing">
 <label class="check"><input type="checkbox"><span>護照、機票與住宿資料</span></label><label class="check"><input type="checkbox"><span>韓元現金 / 信用卡 / 交通卡</span></label><label class="check"><input type="checkbox"><span>手機漫遊或 eSIM</span></label><label class="check"><input type="checkbox"><span>充電器、行動電源、轉接頭</span></label><label class="check"><input type="checkbox"><span>保暖外套、圍巾與好走的鞋</span></label><label class="check"><input type="checkbox"><span>醫美術後用品與診所注意事項</span></label></div><div class="progress-row"><span>PACKING PROGRESS</span><span class="count">0 / 6</span></div><div class="progress"><span></span></div></div>
@@ -114,6 +114,21 @@
 (function(){
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  const tabs=[...document.querySelectorAll('.daybtn')],panels=[...document.querySelectorAll('.day-panel')];
+ document.querySelectorAll('.spot-card[data-spot-day]').forEach(card=>{
+   const goToDay=()=>{
+     const index=Number(card.dataset.spotDay);
+     const tab=document.querySelector('#itinerary .daynav:not(.daynav-bottom) .daybtn[data-day="'+index+'"]');
+     if(tab) tab.click();
+     requestAnimationFrame(()=>{
+       const target=panels[index];
+       if(!target) return;
+       const top=target.getBoundingClientRect().top+window.scrollY-88;
+       window.scrollTo({top:Math.max(0,top),behavior:reduced?'auto':'smooth'});
+     });
+   };
+   card.addEventListener('click',event=>{if(event.target.closest('a')) return;goToDay();});
+   card.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&!event.target.closest('a')){event.preventDefault();goToDay();}});
+ });
  tabs.forEach(btn=>btn.addEventListener('click',()=>{
    const index=Number(btn.dataset.day);
    tabs.forEach((b,i)=>b.classList.toggle('active',i===index));
