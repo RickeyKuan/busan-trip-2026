@@ -46,11 +46,30 @@
 .spot-copy{padding:25px 26px 28px}.spot-copy h3{font-size:clamp(23px,3vw,34px);line-height:1.05;letter-spacing:-.055em;margin:10px 0 12px}.spot-copy p{font-size:14px;line-height:1.8;color:#a3b0a9;min-height:76px;margin:0 0 20px}.spot-copy>a{display:inline-block;font:10px var(--mono);letter-spacing:.08em;color:var(--mint);border-bottom:1px solid rgba(201,227,215,.45);padding-bottom:4px}
 @media(max-width:760px){.spotlight-wrap{padding-top:75px;padding-bottom:80px}.spotlight-grid{grid-template-columns:1fr}.spot-image{height:230px}.spot-day4{background-position:center}.spot-copy{padding:22px}.spot-copy p{min-height:0}}
 .daynav-bottom{margin:42px 0 0;padding-top:26px;border-top:1px solid rgba(242,238,230,.2);align-items:center}.daynav-hint{font:11px var(--mono);letter-spacing:.1em;color:var(--mint);margin-right:8px}@media(max-width:760px){.daynav-bottom{gap:8px}.daynav-hint{width:100%;margin:0 0 4px}.daynav-bottom .daybtn{padding:10px 12px;font-size:10px}}
-</style>
+
+/* Wishlist and Korean phrasebook */
+.wish-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.wish-card{border:1px solid rgba(242,238,230,.22);padding:25px 27px;min-width:0}
+.wish-label{font:10px var(--mono);letter-spacing:.15em;color:var(--orange)}
+.wish-card h3{font-size:25px;letter-spacing:-.05em;margin:12px 0}
+.wish-card ul{margin:0;padding-left:19px;color:#c5cec8;font-size:14px;line-height:1.95}
+.wish-note,.phrase-tip{margin-top:22px;padding:17px 20px;border-left:2px solid var(--orange);background:rgba(255,104,72,.1);font-size:13px;line-height:1.8;color:#d6c9bd}
+.korean-section{background:var(--paper)}
+.korean-section .section-head p{color:#606c67}
+.phrase-group{margin:42px 0 0}
+.phrase-group h3{font:12px var(--mono);letter-spacing:.14em;border-bottom:1px solid var(--line);padding-bottom:13px;margin:0 0 16px}
+.phrase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.phrase{background:rgba(255,255,255,.45);border:1px solid rgba(16,27,28,.1);padding:17px;min-width:0}
+.phrase b{display:block;font-size:19px;margin-bottom:8px}
+.phrase span{display:block;font:11px/1.6 var(--mono);color:#8a5948;overflow-wrap:anywhere}
+.phrase small{display:block;font-size:13px;color:#606c67;margin-top:8px}
+.korean-section .phrase-tip{color:#66564e}
+@media(max-width:760px){.wish-grid{grid-template-columns:1fr}.phrase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.phrase{padding:14px}.phrase b{font-size:17px}.toplinks a:nth-child(2){display:inline}}
+\n</style>
 </head>
 <body>
 <div class="noise"></div>
-<nav class="topbar"><a class="brand" href="#top"><span class="brand-mark">B</span><span>FIELD NOTES / 2026</span></a><div class="toplinks"><a href="#itinerary">ITINERARY</a><a href="#special">HIGHLIGHT</a><a href="#tools">TRIP KIT</a></div><span>BUSAN · KR</span></nav>
+<nav class="topbar"><a class="brand" href="#top"><span class="brand-mark">B</span><span>FIELD NOTES / 2026</span></a><div class="toplinks"><a href="#itinerary">ITINERARY</a><a href="#wishlist">WISHLIST</a><a href="#korean">KOREAN</a><a href="#tools">TRIP KIT</a></div><span>BUSAN · KR</span></nav>
 <header class="hero" id="top"><div class="hero-bg"></div><div class="hero-orb"></div><div class="hero-copy"><div class="kicker">A WINTER CITY JOURNAL — DECEMBER 17—20, 2026</div><h1 class="hero-title">Bu想san班，<span>就去Busan</span></h1><div class="hero-bottom"><div class="hero-sub">海風、城市、咖啡與一點點漫遊。<br>四天三夜，把釜山走成自己的節奏。</div><div class="hero-meta">4 DAYS / 3 NIGHTS<br>17—20 DEC 2026<br>STAY · GRAY 193 HOTEL<br>GWANGALLI, BUSAN</div></div></div><div class="scroll-cue">SCROLL TO EXPLORE</div></header>
 <div class="marquee"><div class="marquee-track"><span>TAKE THE LONG WAY HOME ✳ BUSAN IN WINTER ✳ GOOD DAYS BY THE SEA ✳ TAKE THE LONG WAY HOME ✳ BUSAN IN WINTER ✳ GOOD DAYS BY THE SEA ✳</span></div></div>
 <section class="intro"><div><div class="eyebrow">01 / THE JOURNEY</div><h2>不趕路，<br>才看得到風景。</h2></div><div class="intro-copy"><p>以廣安里為基地，白天探索西面、田浦與 Centum City，晚上回到海邊。行程保留彈性，讓購物、吃飯和臨時發現的小店都有空間。</p><p>這不是打卡競賽。把重要的先放進路線，其他交給當天的天氣與心情。</p><div class="facts"><div class="fact"><small>ARRIVE</small><strong>12.17 / 13:00</strong></div><div class="fact"><small>FLIGHT HOME</small><strong>12.20 / 18:55</strong></div><div class="fact"><small>HOME BASE</small><strong>Gwangalli</strong></div></div></div></section>
@@ -99,12 +118,64 @@
 </div></div></div>
 <div class="daynav daynav-bottom" aria-label="選擇其他日期"><span class="daynav-hint">想看其他天？</span><button class="daybtn active" data-day="0">DAY 01 / 12.17</button><button class="daybtn" data-day="1">DAY 02 / 12.18</button><button class="daybtn" data-day="2">DAY 03 / 12.19</button><button class="daybtn" data-day="3">DAY 04 / 12.20</button></div>
 </section>
-<section class="section section-dark" id="tools"><div class="section-head"><div><div class="eyebrow">04 / THE USEFUL PART</div><h2>YOUR TRIP KIT</h2></div><p>可直接在頁面勾選，完成進度會保存在這台裝置的瀏覽器。</p></div>
+
+<section class="section section-dark wishlist-section" id="wishlist">
+  <div class="section-head"><div><div class="eyebrow">04 / THE WISHLIST</div><h2>WANT TO<br>GO & FIND.</h2></div><p>旅途中想去、想吃、想逛的地方先收在這裡。以下是待安排清單，尚未排入每日動線。</p></div>
+  <div class="wish-grid">
+    <article class="wish-card"><div class="wish-label">FOOD & CAFE / 美食咖啡</div><h3>吃一點釜山味</h3><ul><li>西面｜盛滿情</li><li>真豬肉湯飯（진돼지곰탕）</li><li>Lasoop Rosters&Bakery（라숲）</li></ul></article>
+    <article class="wish-card"><div class="wish-label">SHOPPING / 香氛選物</div><h3>香氣與生活選物</h3><ul><li>Hetras（헤트라스）</li><li>Scentica｜香水</li><li>Working Holiday Busan（워킹홀리데이）｜廣安里</li></ul></article>
+    <article class="wish-card"><div class="wish-label">K-FASHION / 韓系品牌</div><h3>想逛的服飾品牌</h3><ul><li>ADER ERROR</li><li>thisisneverthat</li><li>NERDY</li><li>Musinsa Standard</li><li>8SECONDS</li><li>STYLENANDA</li><li>ALAND</li><li>WHO.A.U</li></ul></article>
+    <article class="wish-card"><div class="wish-label">EXPERIENCE / 體驗與交通</div><h3>行程裡的小期待</h3><ul><li>廣安里無人機秀｜週六預計 19:00、21:00 兩場，依官方公告及天候確認</li><li>釜山機場接送｜金海機場 ⇄ Gray 193 Hotel（廣安里）</li></ul></article>
+  </div>
+  <div class="wish-note">WISHLIST ONLY / 以上先收錄，尚未確認分店、營業時間、交通與是否納入行程；開始安排時再依地點整合動線。</div>
+</section>
+<section class="section section-dark" id="tools"><div class="section-head"><div><div class="eyebrow">05 / THE USEFUL PART</div><h2>YOUR TRIP KIT</h2></div><p>可直接在頁面勾選，完成進度會保存在這台裝置的瀏覽器。</p></div>
 <div class="toolbox"><div class="tool-card"><div class="small">01 / BEFORE YOU GO</div><h3>出發前檢查</h3><p>行前重要物品與資料。</p><div class="checklist" data-list="packing">
 <label class="check"><input type="checkbox"><span>護照、機票與住宿資料</span></label><label class="check"><input type="checkbox"><span>韓元現金 / 信用卡 / 交通卡</span></label><label class="check"><input type="checkbox"><span>手機漫遊或 eSIM</span></label><label class="check"><input type="checkbox"><span>充電器、行動電源、轉接頭</span></label><label class="check"><input type="checkbox"><span>保暖外套、圍巾與好走的鞋</span></label><label class="check"><input type="checkbox"><span>醫美術後用品與診所注意事項</span></label></div><div class="progress-row"><span>PACKING PROGRESS</span><span class="count">0 / 6</span></div><div class="progress"><span></span></div></div>
 <div class="tool-card"><div class="small">02 / BEAUTY RUN</div><h3>Olive Young 清單</h3><p>採購前先列好，減少現場漏買。</p><div class="checklist" data-list="beauty">
 <label class="check"><input type="checkbox"><span>防曬 / 修護保養</span></label><label class="check"><input type="checkbox"><span>面膜 / 保濕用品</span></label><label class="check"><input type="checkbox"><span>唇部與護手用品</span></label><label class="check"><input type="checkbox"><span>清潔與卸妝用品</span></label><label class="check"><input type="checkbox"><span>其他想買的韓國美妝</span></label></div><div class="progress-row"><span>SHOPPING PROGRESS</span><span class="count">0 / 5</span></div><div class="progress"><span></span></div></div></div>
 <div class="callout">PLANNING STATUS / 釜山食燒肉清單中已排除 83；CORALANI 不納入。西面醬蟹餐廳、La Feuille 分店及週六晚餐尚未定案。餐廳訂位、營業時間、展覽檔期、無人機秀與夜生活活動，請於出發前再次確認。地圖連結僅供導航，不代表已訂位。</div>
+</section>
+
+<section class="section korean-section" id="korean">
+  <div class="section-head"><div><div class="eyebrow">06 / KOREAN PHRASEBOOK</div><h2>안녕하세요!<br>HELLO, BUSAN.</h2></div><p>旅行常用韓文速查。保留韓文字、羅馬拼音與中文近似發音，例句可直接給店員或司機看。</p></div>
+  <div class="phrase-group"><h3>01 / 基本招呼</h3><div class="phrase-grid">
+    <div class="phrase"><b>안녕하세요</b><span>annyeonghaseyo｜安妞哈से唷</span><small>你好／您好</small></div>
+    <div class="phrase"><b>감사합니다</b><span>gamsahamnida｜康撒哈密達</span><small>謝謝</small></div>
+    <div class="phrase"><b>죄송합니다</b><span>joesonghamnida｜罪松哈密達</span><small>不好意思／對不起</small></div>
+    <div class="phrase"><b>괜찮아요</b><span>gwaenchanayo｜關恰那唷</span><small>沒關係／不用了</small></div>
+  </div></div>
+  <div class="phrase-group"><h3>02 / 餐廳點餐</h3><div class="phrase-grid">
+    <div class="phrase"><b>이거 주세요.</b><span>igeo juseyo｜伊勾 啾से唷</span><small>請給我這個。</small></div>
+    <div class="phrase"><b>메뉴판 주세요.</b><span>menyupan juseyo｜ मे紐潘 啾से唷</span><small>請給我菜單。</small></div>
+    <div class="phrase"><b>물 주세요.</b><span>mul juseyo｜木兒 啾से唷</span><small>請給我水。</small></div>
+    <div class="phrase"><b>얼마예요?</b><span>eolmayeyo｜喔兒馬耶唷</span><small>多少錢？</small></div>
+    <div class="phrase"><b>맵지 않게 해 주세요.</b><span>maepji anke hae juseyo</span><small>請做不辣一點。</small></div>
+    <div class="phrase"><b>포장해 주세요.</b><span>pojanghae juseyo｜坡將嘿 啾से唷</span><small>請幫我外帶。</small></div>
+  </div></div>
+  <div class="phrase-group"><h3>03 / 購物結帳</h3><div class="phrase-grid">
+    <div class="phrase"><b>이거 얼마예요?</b><span>igeo eolmayeyo｜伊勾 喔兒馬耶唷</span><small>這個多少錢？</small></div>
+    <div class="phrase"><b>카드 돼요?</b><span>kadeu dwaeyo｜卡德 對唷</span><small>可以刷卡嗎？</small></div>
+    <div class="phrase"><b>현금으로 할게요.</b><span>hyeongeumeuro halgeyo</span><small>我要付現金。</small></div>
+    <div class="phrase"><b>다른 색 있어요?</b><span>dareun saek isseoyo</span><small>有其他顏色嗎？</small></div>
+    <div class="phrase"><b>입어 봐도 돼요?</b><span>ibeo bwado dwaeyo</span><small>可以試穿嗎？</small></div>
+    <div class="phrase"><b>괜찮아요. 구경할게요.</b><span>gwaenchanayo. gugyeonghalgeyo</span><small>不用了，謝謝，我先逛逛。</small></div>
+  </div></div>
+  <div class="phrase-group"><h3>04 / 問路與交通</h3><div class="phrase-grid">
+    <div class="phrase"><b>화장실 어디예요?</b><span>hwajangsil eodiyeyo</span><small>洗手間在哪裡？</small></div>
+    <div class="phrase"><b>여기 어떻게 가요?</b><span>yeogi eotteoke gayo</span><small>請問這裡怎麼去？</small></div>
+    <div class="phrase"><b>택시 타는 곳이 어디예요?</b><span>taeksi taneun gosi eodiyeyo</span><small>計程車搭乘處在哪裡？</small></div>
+    <div class="phrase"><b>공항까지 가 주세요.</b><span>gonghangkkaji ga juseyo</span><small>請載我到機場。</small></div>
+    <div class="phrase"><b>여기서 내려 주세요.</b><span>yeogiseo naeryeo juseyo</span><small>請讓我在這裡下車。</small></div>
+    <div class="phrase"><b>가까워요?</b><span>gakkawoyo</span><small>很近嗎？</small></div>
+  </div></div>
+  <div class="phrase-group"><h3>05 / 住宿與預約</h3><div class="phrase-grid">
+    <div class="phrase"><b>예약했어요.</b><span>yeyakhaesseoyo</span><small>我有預約。</small></div>
+    <div class="phrase"><b>체크인하고 싶어요.</b><span>chekeuinhago sipeoyo</span><small>我想辦理入住。</small></div>
+    <div class="phrase"><b>짐을 맡길 수 있어요?</b><span>jimeul matgil su isseoyo</span><small>可以寄放行李嗎？</small></div>
+    <div class="phrase"><b>공항 픽업 예약했어요.</b><span>gonghang pikeop yeyakhaesseoyo</span><small>我預約了機場接送。</small></div>
+  </div></div>
+  <div class="phrase-tip">發音提示：中文近似音只作快速記憶，與韓文實際發音不會完全相同；需要溝通時，優先把韓文字句直接出示給對方。</div>
 </section>
 <footer class="footer"><div class="footer-top"><h2>SEE YOU<br>BY THE SEA.</h2><p>BUSAN, SOUTH KOREA<br>DECEMBER 17—20, 2026<br>MADE FOR A SLOWER KIND OF TRAVEL.</p></div><div class="footer-bottom"><span>BUSAN FIELD NOTES / 2026</span><span>TAKE IT SLOW. TAKE IT ALL IN.</span></div><div class="footer-bottom" style="border:0;margin-top:18px;padding-top:0"><span>PHOTO: SHIBIN JOSEPH / JOSEPH PRADIPTA · UNSPLASH</span><span>UNSPLASH LICENSE</span></div></footer>
 <button class="backtop" aria-label="Back to top">↑</button>
