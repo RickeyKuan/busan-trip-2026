@@ -47,6 +47,18 @@
 @media(max-width:760px){.spotlight-wrap{padding-top:75px;padding-bottom:80px}.spotlight-grid{grid-template-columns:1fr}.spot-image{height:230px}.spot-day4{background-position:center}.spot-copy{padding:22px}.spot-copy p{min-height:0}}
 .daynav-bottom{margin:42px 0 0;padding-top:26px;border-top:1px solid rgba(242,238,230,.2);align-items:center}.daynav-hint{font:11px var(--mono);letter-spacing:.1em;color:var(--mint);margin-right:8px}@media(max-width:760px){.daynav-bottom{gap:8px}.daynav-hint{width:100%;margin:0 0 4px}.daynav-bottom .daybtn{padding:10px 12px;font-size:10px}}
 
+
+/* Aesthetic clinic wishlists */
+.aesthetic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.aesthetic-card{border:1px solid rgba(242,238,230,.22);padding:25px 27px;min-width:0}
+.aesthetic-card:last-child{grid-column:1/-1}
+.aesthetic-clinic{font:10px var(--mono);letter-spacing:.15em;color:var(--orange)}
+.aesthetic-card h3{font-size:25px;letter-spacing:-.05em;margin:12px 0}
+.aesthetic-card ul{margin:0;padding-left:19px;color:#c5cec8;font-size:14px;line-height:1.95}
+.aesthetic-card li.pending{color:#e8a18f}
+.aesthetic-footnote{margin-top:22px;padding:17px 20px;border-left:2px solid var(--orange);background:rgba(255,104,72,.1);font-size:13px;line-height:1.8;color:#d6c9bd}
+@media(max-width:760px){.aesthetic-grid{grid-template-columns:1fr}.aesthetic-card:last-child{grid-column:auto}}
+
 /* Wishlist and Korean phrasebook */
 .wish-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .wish-card{border:1px solid rgba(242,238,230,.22);padding:25px 27px;min-width:0}
@@ -69,7 +81,7 @@
 </head>
 <body>
 <div class="noise"></div>
-<nav class="topbar"><a class="brand" href="#top"><span class="brand-mark">B</span><span>FIELD NOTES / 2026</span></a><div class="toplinks"><a href="#itinerary">ITINERARY</a><a href="#wishlist">WISHLIST</a><a href="#korean">KOREAN</a><a href="#tools">TRIP KIT</a></div><span>BUSAN · KR</span></nav>
+<nav class="topbar"><a class="brand" href="#top"><span class="brand-mark">B</span><span>FIELD NOTES / 2026</span></a><div class="toplinks"><a href="#itinerary">ITINERARY</a><a href="#aesthetic-wishlist">AESTHETIC</a><a href="#wishlist">WISHLIST</a><a href="#korean">KOREAN</a><a href="#tools">TRIP KIT</a></div><span>BUSAN · KR</span></nav>
 <header class="hero" id="top"><div class="hero-bg"></div><div class="hero-orb"></div><div class="hero-copy"><div class="kicker">A WINTER CITY JOURNAL — DECEMBER 17—20, 2026</div><h1 class="hero-title">Bu想san班，<span>就去Busan</span></h1><div class="hero-bottom"><div class="hero-sub">海風、城市、咖啡與一點點漫遊。<br>四天三夜，把釜山走成自己的節奏。</div><div class="hero-meta">4 DAYS / 3 NIGHTS<br>17—20 DEC 2026<br>STAY · GRAY 193 HOTEL<br>GWANGALLI, BUSAN</div></div></div><div class="scroll-cue">SCROLL TO EXPLORE</div></header>
 <div class="marquee"><div class="marquee-track"><span>TAKE THE LONG WAY HOME ✳ BUSAN IN WINTER ✳ GOOD DAYS BY THE SEA ✳ TAKE THE LONG WAY HOME ✳ BUSAN IN WINTER ✳ GOOD DAYS BY THE SEA ✳</span></div></div>
 <section class="intro"><div><div class="eyebrow">01 / THE JOURNEY</div><h2>不趕路，<br>才看得到風景。</h2></div><div class="intro-copy"><p>以廣安里為基地，白天探索西面、田浦與 Centum City，晚上回到海邊。行程保留彈性，讓購物、吃飯和臨時發現的小店都有空間。</p><p>這不是打卡競賽。把重要的先放進路線，其他交給當天的天氣與心情。</p><div class="facts"><div class="fact"><small>ARRIVE</small><strong>12.17 / 13:00</strong></div><div class="fact"><small>FLIGHT HOME</small><strong>12.20 / 18:55</strong></div><div class="fact"><small>HOME BASE</small><strong>Gwangalli</strong></div></div></div></section>
@@ -119,6 +131,19 @@
 <div class="event"><div class="event-time">18:55</div><div><h4>FLIGHT HOME</h4><p>帶著釜山的冬日記憶回家。</p></div></div>
 </div></div></div>
 <div class="daynav daynav-bottom" aria-label="選擇其他日期"><span class="daynav-hint">想看其他天？</span><button class="daybtn active" data-day="0">DAY 01 / 12.17</button><button class="daybtn" data-day="1">DAY 02 / 12.18</button><button class="daybtn" data-day="2">DAY 03 / 12.19</button><button class="daybtn" data-day="3">DAY 04 / 12.20</button></div>
+</section>
+
+
+<section class="section section-dark aesthetic-section" id="aesthetic-wishlist">
+  <div class="section-head"><div><div class="eyebrow">04 / AESTHETIC WISHLIST</div><h2>BEAUTY<br>PLANS.</h2></div><p>各診所想諮詢或安排的療程先集中整理；標註「待確認」的項目，需先向診所確認是否提供及適合施作。</p></div>
+  <div class="aesthetic-grid">
+    <article class="aesthetic-card"><div class="aesthetic-clinic">CLINIC / 關</div><h3>想做的療程</h3><ul><li>ONDA</li><li>黃金微針</li><li>非鳳凰眼周療程</li><li>腋下除毛</li></ul></article>
+    <article class="aesthetic-card"><div class="aesthetic-clinic">CLINIC / 佛</div><h3>想做的療程</h3><ul><li>ONDA</li><li>韓國音波</li></ul></article>
+    <article class="aesthetic-card"><div class="aesthetic-clinic">CLINIC / 達</div><h3>想做的療程</h3><ul><li>黃金微針</li><li class="pending">ONDA（待確認）</li><li class="pending">非鳳凰眼周療程（待確認）</li></ul></article>
+    <article class="aesthetic-card"><div class="aesthetic-clinic">CLINIC / 成</div><h3>想做的療程</h3><ul><li>額頭：肉毒除皺</li><li>眼周：玻尿酸填補淚溝／麗珠蘭淡化黑眼圈</li><li>皮膚：黃金微針＋喬雅露</li><li>嘴唇：玻尿酸豐唇</li></ul></article>
+    <article class="aesthetic-card"><div class="aesthetic-clinic">CLINIC / 哲</div><h3>想做的療程</h3><ul><li>ONDA</li><li>黃金微針</li><li>韓國音波</li><li>腋下除毛</li><li>鬍子除毛</li></ul></article>
+  </div>
+  <div class="aesthetic-footnote">諮詢提醒 / 以上為療程意願清單，並非已預約或確認可施作項目。眼周療程以非鳳凰電波為前提；實際適應症、療程順序、恢復期、價格與是否能同日施作，請以醫師評估及診所回覆為準。</div>
 </section>
 
 <section class="section section-dark wishlist-section" id="wishlist">
